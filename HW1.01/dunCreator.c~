@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void printDungeon(char dungeon[][]);
+
+int main(int argc, char *argv[])
+{
+  char dungeon[80][24];
+  int i;
+  for(i=0;i<80;i++)
+    {
+      dungeon[i][0]='-';
+    }
+  printDungeon(dungeon);
+  return 0;
+}
+
+void printDungeon(char dungeon[][])
+{
+  int i;
+  for(i=0;i<80;i++)
+    {
+      printf("%c",char[i][0]);
+    }
+}
