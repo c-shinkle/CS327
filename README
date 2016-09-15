@@ -1,0 +1,13 @@
+Christian Shinkle's ReadMe for Assignment 1.02
+
+This is an implementation of a dungeon creator. It is used to create an outline, made of '-' and '|', six rooms, made of '.', and corridors, made of '#'.
+The program starts by making a 80x24 array filled with blank spaces. Next, it creates an outline using two simple loops. 
+Then, it generates six rooms. These rooms can vary from 4x3 to 6x5. They are randomly placed thoughout the dungeon,
+such that no two rooms intersect one another. A collides function was implemented to check for collision. Next, the corridors
+are drawn and, lastly, the entire dungeon is drawn using the printf function.
+
+New features added are the save and load functions. By calling "--load" on the command line, the program can load a file and display it by parsing information from a binary file.
+The file is read by using "fopen()" function and parsing the information accordingly. It can also call save a file that has either been loaded in or randomly generated.
+The file is written by using "fwrite()" function and by writing the information based off of information from the "hardness" and "all_rooms" arrays.
+
+Credit to Yuxiang Zhang for code ussed to implement drawing of the corridors. 

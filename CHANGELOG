@@ -1,0 +1,21 @@
+Change Log ComS 327 Christian Shinkle
+9/14/16: I got the save method working. I just finised getting both the save and load method to work in tandem. 
+
+9/13/16: I got a lot of work done with the load method. I had many difficulties with the FILE pointer and fread, but I was able to get it working.
+
+9/12/16: I got some work done on the load method. Reading from files is a little tricky, but I think I'm getting there. I still need to add a for loop
+before I can offically say i've extracted all the information from a save file correctly.
+
+9/11/16: I update my code by using code that was shared on Blackboard. I fixed a bug where rooms and paths were able to spawn on the edge of the dungeon.
+All the code that was borrowed was from Yuxiang Zhang.
+
+9/7/16: I added a "draw_corridor" function that does exactly what the names says. I polished up some more of the code and made some small tweeks to the "generate_rooms" function.  
+
+9/6/16: I added a "can_collide" function, but it is proving more difficult than expected to impliment. I also cleaned up a little bit of my code by compartmentalizing it into some helper functions. 
+
+9/5/16: I added the ability to print rooms. Granted, the rooms are all the same size and they still collide, but still, they are within the outlline. I will work begin work on a function that will check if rooms collide or not. I'm not sure how the shifting will work if they do collide.
+Maybe regenerate a new location and hope it doesn't collide? 
+
+9/1/16: Today, I added a function that would create an outline. I had trouble passing a two-dimensional array as a parameter, but I figured out how to by explicitly declaring the size of both dimension as it is being passed.
+
+8/31/16: I created the first source file called dunCreator. I created a few loops that would create the outline of the dungeon. I also threw together a quick make file.
